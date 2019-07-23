@@ -57,11 +57,11 @@ templateEntity.PlanetBidTemplatePriceSections
 
 Refactor it to ```foreach``` loop
 ```cs
-    foreach (var templatePriceSection in templateEntity.PlanetBidTemplatePriceSections)
-    {
+foreach (var templatePriceSection in templateEntity.PlanetBidTemplatePriceSections)
+{
 	var priceSection = CreatePriceSection(templatePriceSection, planetBidEntity.ID);
 	planetBidEntity.PlanetBidPriceSections.Add(priceSection);
-    }
+}
 ```
 
 ## Naming
