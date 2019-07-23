@@ -12,9 +12,9 @@ System.Collections.Generic.IEnumerable<>
 If Class is internal then give full name of the class or the service:
 ```cs
 EF.Document document = _entities.Document.SingleOrDefault(item => item.ID == documentId);
-
+```
 OR
-
+```cs
 private readonly Services.Document _documentService;
  ````
 4.	Do not indent object intializers and initialize each property on a new line: 
