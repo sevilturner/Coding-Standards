@@ -4,7 +4,12 @@
 
 2.	Remove ```Using``` statement that aren’t actually referenced in the file and organize it by right clicking on namespace -> Remove and Sort Using. 
 
-3. Use ```Using``` only for Microsoft classes, and if Class is internal then give full name of the class or service:
+3. Use ```Using``` only for the following types e.g.:
+```cs
+System.Collections.Generic.IEnumerable<> 
+```
+
+If Class is internal then give full name of the class or the service:
 ```cs
 EF.Document document = _entities.Document.SingleOrDefault(item => item.ID == documentId);
 
@@ -45,9 +50,9 @@ var missingArrivalTimes = tripDays
 ```
 7. Instead of writing .ToList().ForEach() 
 ```cs
-	templateEntity.PlanetBidTemplatePriceSections
-		.ToList()
-		.ForEach(item => CreateStorage(item, entity));
+templateEntity.PlanetBidTemplatePriceSections
+	.ToList()
+	.ForEach(item => CreateStorage(item, entity));
 ```
 
 Refactor it foreach loop
