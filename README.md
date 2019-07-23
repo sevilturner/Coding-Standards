@@ -48,7 +48,7 @@ var missingArrivalTimes = tripDays
 	.OrderBy(trip => trip.Ordinal)
 	.First().TripMode.RequiresTime && !tripDay.TimeArrived.HasValue);
 ```
-7. Instead of writing .ToList().ForEach() 
+7. Instead of writing ```.ToList().ForEach()``` 
 ```cs
 templateEntity.PlanetBidTemplatePriceSections
 	.ToList()
