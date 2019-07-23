@@ -34,7 +34,7 @@ IEnumerable<Customer> customers = dbCustomers.Select(customer => new Customer
 ```
 5.	Omit extra blank lines in a method. 
 
-6.	When using LINQ, seprate lines by LINQ function for easy readibility. 
+6.	When using LINQ, separate lines by LINQ function for easy readibility. 
 
 Instead of this:
 ```cs
@@ -55,7 +55,7 @@ templateEntity.PlanetBidTemplatePriceSections
 	.ForEach(item => CreateStorage(item, entity));
 ```
 
-Refactor it foreach loop
+Refactor it to ```foreach``` loop
 ```cs
     foreach (var templatePriceSection in templateEntity.PlanetBidTemplatePriceSections)
     {
