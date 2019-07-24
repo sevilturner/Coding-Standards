@@ -73,3 +73,4 @@ foreach (var templatePriceSection in templateEntity.PlanetBidTemplatePriceSectio
 ## Maintainability
 
 1. Do not declare a variable if it is not used anywhere
+2. Do not leave commented methods, git tracks all the changes
